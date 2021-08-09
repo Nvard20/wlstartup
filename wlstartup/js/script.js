@@ -12,3 +12,29 @@ $('.burger').click(function(){
         $('#burg').removeClass('fa-close');
     }
 });
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    loopFillGroupWithBlank: true,
+
+    navigation: {
+      nextEl: ".left",
+      prevEl: ".right",
+    },
+    breakpoints: {
+        // when window width is <= 499px
+        1920: {
+            slidesPerView: 4,
+        },
+        767: {
+            slidesPerView: 2,
+          
+        },
+        600: {
+            slidesPerView: 1,
+          
+        },
+  
+        // when window width is <= 999px
+      
+    }
+  });

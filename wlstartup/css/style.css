@@ -256,6 +256,7 @@ text-align: center;
     width: 264px;
     height: 371px;
     position: relative;
+    margin: auto;
 }
 .member-img{
     height: 251px;
@@ -289,9 +290,10 @@ margin-top: 13px;
 .team-members{
     max-width: 1151px;
     margin: auto;
+    padding-bottom: 29px;
 
 }
-.member-img::after{
+/* .member-img::after{
     position: absolute;
     content: '';
     background-color: #bbbbbb;
@@ -306,7 +308,7 @@ margin-top: 13px;
     opacity: .5;
     transition: .4s;
     visibility: visible;
-}
+} */
 
 .social{
     
@@ -333,4 +335,43 @@ margin-top: 13px;
     background-color: #c0301c;
     transition: .2s;
    
+}
+.left{
+    position: absolute;
+    right: 14px;
+    top: 125px;
+    width: 35px;
+    height: 38px;
+    background-color: #55555559;
+    z-index: 99;
+    cursor: pointer;
+    transition: .2s;
+
+}
+.right{
+    position: absolute;
+    left: 14px;
+    top: 125px;
+    width: 35px;
+    height: 38px;
+    background-color: #55555559;
+    z-index: 99;
+    cursor: pointer;
+    transition: .2s;
+
+}
+.left img{
+    margin-top: 12px;
+    transform: rotate(
+180deg
+);
+
+}
+.right img{
+    margin-top: 12px;
+
+}
+.left:hover,.right:hover{
+    background-color: #c0301c;
+    transition: .2s;
 }
