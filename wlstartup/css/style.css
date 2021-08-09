@@ -419,7 +419,6 @@ margin-right: 30px;
 
 }
 .work-hover{
-    max-width: 361px;
     height: 0px;
     background-color: #c3655bbf;
     position: absolute;
@@ -499,4 +498,11 @@ margin: 24px auto;
 }
 .btn > img{
     margin-left: 10px;
+}
+@media (max-width: 400px){
+    .works-box {
+        max-width: 361px;
+        height: 321px;
+        margin: 11px 0px;
+    }
 }

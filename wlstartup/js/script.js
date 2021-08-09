@@ -15,24 +15,18 @@ $('.burger').click(function(){
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     loopFillGroupWithBlank: true,
-
+    slidesPerView:1,
     navigation: {
       nextEl: ".left",
       prevEl: ".right",
     },
     breakpoints: {
         // when window width is <= 499px
-        1920: {
+        1100: {
             slidesPerView: 4,
         },
-        767: {
-            slidesPerView: 2,
-          
-        },
-        600: {
-            slidesPerView: 1,
-          
-        },
+     
+    
   
         // when window width is <= 999px
       
