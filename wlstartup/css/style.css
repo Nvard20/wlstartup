@@ -163,7 +163,7 @@ font-family: "Roboto Slab";
 text-align: center;
 }
 .servs{
-    max-width: 1125px;
+    max-width: 1151px;
     display: flex;
     justify-content: center;
 margin: auto;
@@ -251,4 +251,86 @@ text-align: center;
         margin-bottom: 20px;
 
     }
+}
+.member{
+    width: 264px;
+    height: 371px;
+    position: relative;
+}
+.member-img{
+    height: 251px;
+    max-width: 264px;
+
+}
+.member-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.member h4{
+    font-size: 14px;
+line-height: 24px;
+color: #555555;
+font-weight: 400;
+font-family: "Montserrat";
+margin-top: 15px;
+font-weight: 600;
+
+}
+.member p{
+    font-size: 13px;
+line-height: 24px;
+color: #555555;
+font-weight: 400;
+font-family: "Roboto Slab";
+margin-top: 13px;
+}
+.team-members{
+    max-width: 1151px;
+    margin: auto;
+
+}
+.member-img::after{
+    position: absolute;
+    content: '';
+    background-color: #bbbbbb;
+        width: 100%;
+    height: 251px;
+    left: 0;
+    opacity: 0;
+    transition: .4s;
+    visibility: hidden;
+}
+.member-img:hover::after{
+    opacity: .5;
+    transition: .4s;
+    visibility: visible;
+}
+
+.social{
+    
+    position: absolute;
+    bottom: 155px;
+    margin: auto;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition:all 0.3s linear,opacity 0.3s linear;
+
+}
+.member:hover .social{
+    visibility: visible;
+    opacity: 1;
+}
+.social a{
+    margin-right: 15px;
+    width: 28px;
+    height: 28px;
+    padding: 6px 9px;
+}
+.social a:hover{
+    background-color: #c0301c;
+    transition: .2s;
+   
 }
