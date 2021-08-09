@@ -41,7 +41,7 @@ text-decoration: none;
     display: flex;
 }
 .main-part{
-    max-width: 1600px;
+    max-width: 1920px;
     background-image: url(../img/home.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -142,4 +142,113 @@ margin-top: 51px;
 .st-btn:hover{
     background-color: tomato;
     transition: .3s;
+}
+.services-container{
+    margin-top: 99px;
+}
+.txt-serv h3{
+    font-size: 20px;
+line-height: 24px;
+color: #555555;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+}
+.txt-serv > p{
+    font-size: 16px;
+line-height: 24px;
+color: #555555;
+font-weight: 400;
+font-family: "Roboto Slab";
+text-align: center;
+}
+.servs{
+    max-width: 1125px;
+    display: flex;
+    justify-content: center;
+margin: auto;
+margin-top: 68px;
+margin-bottom: 98px;
+
+}
+.serv-box h4{
+    font-size: 14px;
+line-height: 24px;
+color: #555555;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+text-transform: uppercase;
+}
+.serv-box p{
+
+font-size: 14px;
+line-height: 24px;
+color: #555555;
+font-weight: 400;
+font-family: "Roboto Slab";
+text-align: center;
+}
+.serv-box {
+    max-width: 360px;
+ 
+}
+.serv-img{
+    max-width: 93px;
+    margin: auto;
+}
+.about-container h3{
+    font-size: 20px;
+line-height: 24px;
+color: #555555;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+padding-top: 100px;
+}
+.about-container{
+    background-color: #f8f8f8;
+}
+.line{
+    width: 50px;
+height: 2px;
+background-color: #555555;
+margin: 28px auto;
+}
+.about-container {
+    font-size: 16px;
+line-height: 24px;
+color: #555555;
+font-weight: 400;
+font-family: "Roboto Slab";
+text-align: center;
+}
+.about-boxes{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1138px;
+    margin: auto;
+    padding: 77px 30px;
+
+}
+.tx{
+    max-width: 553px;
+}
+@media (max-width: 767px){
+    .servs{
+        flex-direction: column;
+    align-items: center;
+    }
+    .serv-box {
+        max-width: unset;
+        margin-bottom: 25px;
+    }
+    .about-boxes{
+        flex-direction: column;
+    align-items: center;
+    }
+    .tx{
+        margin-bottom: 20px;
+
+    }
 }
