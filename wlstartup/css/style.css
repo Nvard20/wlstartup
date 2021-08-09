@@ -375,3 +375,128 @@ margin-top: 13px;
     background-color: #c0301c;
     transition: .2s;
 }
+.latest-works-container h2{
+    font-size: 20px;
+line-height: 24px;
+color: #555555;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+}
+.latest-works-container{
+    margin-top: 99px;
+}
+.cat{
+    font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+font-family: "Roboto Slab";
+text-align: center;
+text-decoration: none;
+color: black;
+margin-right: 30px;
+}
+.cat:hover{
+    color: #c0301c;
+
+}
+.works{
+    max-width: 1151px;
+    margin: auto;
+
+}
+.categories{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+    flex-wrap: wrap;
+
+}
+.works-box{
+    max-width: 361px;
+    height: 321px;
+    margin: 11px;
+
+}
+.work-hover{
+    max-width: 361px;
+    height: 0px;
+    background-color: #c3655bbf;
+    position: absolute;
+    z-index: 99;
+    top: 11px;
+    opacity: 0;
+    bottom: 100%;
+    transition:all 0.3s ease;
+    width: 100%;
+    visibility: hidden;
+}
+.works-box:hover .work-hover{
+    opacity: 1;
+    max-width: 361px;
+    height: 321px;
+    background-color: #c3655bbf;
+    position: absolute;
+    z-index: 99;
+    top: 11px;
+    bottom: 0;
+    visibility: visible;
+
+}
+.works-box > img{
+    width: 100%;
+    height: 100%;
+}
+.works-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box{
+    position: relative;
+}
+.inner-text > h4{
+    font-size: 18px;
+line-height: 24px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+}
+.inner-text p{
+    font-size: 12px;
+line-height: 24px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Roboto Slab";
+text-align: center;
+}
+.inner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.btn{
+    width: 101px;
+    height: 39px;
+    font-size: 14px;
+letter-spacing: 1px;
+line-height: 24px;
+color: #c0301c;
+font-weight: 400;
+font-family: "Roboto Slab";
+text-align: center;
+background-color: white;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 24px auto;
+}
+.btn > img{
+    margin-left: 10px;
+}
