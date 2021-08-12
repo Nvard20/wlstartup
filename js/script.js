@@ -32,3 +32,12 @@ var swiper = new Swiper(".mySwiper", {
       
     }
   });
+   new Swiper(".mytxtSlider", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    loop: true,
+
+  });
