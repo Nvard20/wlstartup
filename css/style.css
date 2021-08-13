@@ -931,3 +931,6 @@ font-family: "Roboto Slab";
 .sc{
     margin-right: 22px;
 }
+.sc:last-child,.logo:last-child,.cat:last-child{
+    margin-right: 0px !important;
+}

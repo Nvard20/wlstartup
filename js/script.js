@@ -41,3 +41,10 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
 
   });
+  //link animate
+  $(document).ready(function() {
+    $("a.menu-link").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 700);
+    });
+  });
