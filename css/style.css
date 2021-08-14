@@ -122,19 +122,38 @@ margin-top: 51px;
     }
     .burger{
         color: white;
+        position: relative;
+        z-index: 999999999;
 
     }
     .mob-menu > li {
         list-style: none;
+        margin-bottom: 13px;
+        text-align: center;
     }
     .mob-menu{
         background: #671d16;
-    position: absolute;
-    top: 40px;
-    padding: 20px 50px;
-    right: -8px;
-    border-radius: 10px;
-    display: none;
+        position: absolute;
+        top: 0px;
+        padding: 35px 0px;
+        right: 0px;
+        border-radius: 0px;
+        opacity: 0;
+        width: 0;
+        visibility: hidden;
+        right: 0;
+        transition: all .3s ease-out;
+        overflow: hidden;
+    }
+    .mn{
+        display: block !important;
+    }
+    .active-list {
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        height: 100vh;
+
     }
     .text-layer h1 {
         font-size: 48px;
@@ -933,4 +952,14 @@ font-family: "Roboto Slab";
 }
 .sc:last-child,.cat:last-child{
     margin-right: 0px !important;
+}
+
+.cross{
+    margin: 18px auto;
+    flex-direction: row-reverse;
+    margin-left: 40px;
+    transition: .4s;
+}
+.mn{
+ display: none;
 }
