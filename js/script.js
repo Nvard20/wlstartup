@@ -67,3 +67,10 @@ var swiper = new Swiper(".mySwiper", {
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 700);
     });
   });
+  window.onscroll = function (){
+    if(window.pageYOffset >= 200){
+      $('.header').addClass('fixid-header')
+    }else{
+      $('.header').removeClass('fixid-header')
+    }
+}

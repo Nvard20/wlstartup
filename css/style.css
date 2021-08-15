@@ -107,6 +107,9 @@ margin-top: 51px;
 }
 }
 @media (max-width: 767px){
+    .fixid-header > .inner-header{
+        margin-bottom: 0;
+    }
     .navbar{
         display: none;
     }
@@ -156,7 +159,7 @@ margin-top: 51px;
 
     }
     .text-layer h1 {
-        font-size: 48px;
+        font-size: 37px;
         line-height: 55px;}
     .text-layer{
         padding-top: 180px;
@@ -164,7 +167,7 @@ margin-top: 51px;
     }
 }
 .st-btn:hover{
-    background-color: tomato;
+    background-color: #777777;
     transition: .3s;
 }
 .services-container{
@@ -190,6 +193,7 @@ text-align: center;
     max-width: 1151px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 margin: auto;
 margin-top: 68px;
 margin-bottom: 98px;
@@ -963,3 +967,72 @@ font-family: "Roboto Slab";
 .mn{
  display: none;
 }
+.fixid-header{
+    position: fixed;
+    background-color: #671d16;
+    z-index: 999;
+}
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  .modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-window > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #fadbd8;
+  }
+  .modal-window header {
+    font-weight: bold;
+  }
+  .modal-window h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+  
+  .modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+  }
+  .modal-close:hover {
+    color: black;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-window > div {
+    border-radius: 1rem;
+  }
+  
+  .modal-window div:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+  
+ 
