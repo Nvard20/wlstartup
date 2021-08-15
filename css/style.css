@@ -107,6 +107,10 @@ margin-top: 51px;
 }
 }
 @media (max-width: 767px){
+    .modal-window{
+        overflow-y: scroll;
+
+    }
     .fixid-header > .inner-header{
         margin-bottom: 0;
     }
@@ -193,8 +197,8 @@ text-align: center;
     max-width: 1151px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-margin: auto;
+
+    margin: auto;
 margin-top: 68px;
 margin-bottom: 98px;
 
@@ -219,7 +223,8 @@ text-align: center;
 }
 .serv-box {
     max-width: 360px;
- 
+    padding: 10px;
+
 }
 .serv-img{
     max-width: 93px;
@@ -1010,13 +1015,14 @@ font-family: "Roboto Slab";
   .modal-close {
     color: #aaa;
     line-height: 50px;
-    font-size: 80%;
+    font-size: 85%;
     position: absolute;
     right: 0;
     text-align: center;
     top: 0;
     width: 70px;
     text-decoration: none;
+    font-family: sans-serif;
   }
   .modal-close:hover {
     color: black;
