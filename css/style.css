@@ -1070,3 +1070,6 @@ font-family: "Roboto Slab";
  .btnmd:hover{
      background-color: #c0301c;
  }
+.swiper-container{
+overflow: hidden;
+}
