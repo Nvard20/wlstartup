@@ -1072,4 +1072,6 @@ font-family: "Roboto Slab";
  }
 .swiper-container{
 overflow: hidden;
+    position: relative;
+
 }
